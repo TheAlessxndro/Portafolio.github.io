@@ -4,182 +4,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Personal Randy Molina</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-yOhpofaWo3rCv+bZMn0n3vtG3CZPi+/wetNqg7QlGK1flRsgNTCrl5KH9wUG12iH+ZCRplQEdz7sG6EeKtq3kg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Randy Molina | Full Stack Developer</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-navy">
-            <a class="navbar-brand" href="#">BIENVENIDOS, SALUDOS.</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">RM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon" style="background-color: var(--accent-color);"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#sobre-mi"><strong>Sobre Mí</strong></a>
+                        <a class="nav-link" href="#about"><span>01.</span> Sobre Mí</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#portafolio"><strong>Portafolio</strong></a>
+                        <a class="nav-link" href="#skills"><span>02.</span> Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#skills"><strong>Skills</strong></a>
+                        <a class="nav-link" href="#portfolio"><span>03.</span> Portafolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contacto"><strong>Contacto</strong></a>
+                        <a class="nav-link" href="#contact"><span>04.</span> Contacto</a>
                     </li>
                 </ul>
+                <button type="button" class="btn btn-custom ms-3" data-bs-toggle="modal"
+                    data-bs-target="#resumenModal">Resumen</button>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <section class="section bg-navy text-white text-center py-5 inicio-gris">
+
+    <section class="hero-section">
         <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-md-4"> <br>
-                    <img src="https://media.tenor.com/Bpbu2-YNL6cAAAAM/hacker-pupper-dog.gif" class="img-fluid rounded-circle mb-4 photo-small"
-                        alt="Fotografía de Randy Molina">
-                </div>
-                <div class="col-md-8">
-                    <h1 class="mb-3">¡Hola, soy Randy Molina!</h1>
-                    <p class="lead">Bienvenido a mi página personal. Aquí puedes conocer más sobre mí y mis proyectos.
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <p class="hero-subtitle">Hola, mi nombre es</p>
+                    <h1 class="hero-title">Randy Molina.</h1>
+                    <h2 class="hero-title" style="color: var(--text-secondary);">Desarrollo soluciones web a medida.
+                    </h2>
+                    <p class="hero-description">
+                        Soy un Desarrollador de Software enfocado en PHP y tecnologías web modernas. Me especializo en
+                        construir sistemas robustos y escalables para clientes diversos.
                     </p>
+                    <a href="#portfolio" class="btn btn-custom mt-4">Ver mis proyectos</a>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="sobre-mi" class="section py-5">
-        <div class="container">
-            <h2 class="text-center section-title homer-simpson-font">ACERCA DE</h2>
-            <div class="sobre-mi-container">
-                <div class="sobre-mi-content">
-                    <p class="text-justify">Soy un desarrollador de software con conocimientos en varios lenguajes de
-                        programación, bases de datos, frameworks y entornos de desarrollo. Manejo lenguajes como
-                        <strong>Python</strong>, <strong>PHP</strong>, <strong>JavaScript</strong>, y <strong>C#</strong>. En
-                        cuanto a bases de datos, domino <strong>Oracle DB</strong>, <strong>Microsoft SQL</strong>,
-                        <strong>MongoDB</strong>, <strong>MySQL</strong> y <strong>PostgreSQL</strong>. También tengo
-                        experiencia con frameworks como <strong>Laravel</strong>, <strong>React</strong> y <strong>Tailwind
-                            CSS</strong>. Me apasiona la creatividad y el diseño de sitios web, y actualmente me estoy
-                        especializando en análisis de datos.</p>
-                </div>
-                <div class="sobre-mi-image">
-                    <img src="Img/fot.jpg" alt="Fotografía" class="img-fluid rounded">
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    
-    <section id="portafolio" class="section bg-light py-5">
-        <div class="container">
-            <h2 class="text-center section-title homer-simpson-font">PORTAFOLIO</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img src="Img/Sist.png" class="card-img-top" alt="Proyecto Articulos">
-                        <div class="card-body">
-                            <h5 class="card-title">Tienda de Tecnología Avanzada</h5>
-                            <p class="card-text">Explora nuestra página web informativa donde encontrarás una amplia
-                                variedad de artículos tecnológicos de última generación. 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img src="Img/seguri.png" class="card-img-top" alt="Proyecto SeguriKids">
-                        <div class="card-body">
-                            <h5 class="card-title">SeguriKids</h5>
-                            <p class="card-text">Página web informativa sobre el bullying en escuelas, colegios y
-                                trabajos. Ofrece noticias relevantes para detectar y combatir el acoso.</p>
-                        </div>
+                <div class="col-lg-5 d-none d-lg-block">
+                    <div class="hero-img-container">
+                        <img src="Img/fot.jpg" alt="Randy Molina" class="hero-img img-fluid">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="skills" class="section py-5 bg-light">
+
+    <section id="about" class="section">
         <div class="container">
-            <h2 class="text-center section-title homer-simpson-font">SKILLS</h2>
+            <h2 class="section-title"><span>01.</span> Sobre Mí</h2>
             <div class="row">
+                <div class="col-lg-7">
+                    <div class="about-text">
+                        <p>
+                            Soy un desarrollador de software apasionado con un fuerte enfoque en <strong>PHP</strong> y
+                            el desarrollo web. A lo largo de mi carrera, he tenido la oportunidad de trabajar en
+                            diversos proyectos con diferentes clientes, construyendo una variedad de sistemas a la
+                            medida que resuelven problemas reales.
+                        </p>
+                        <p>
+                            Mi interés principal radica en crear soluciones eficientes y bien estructuradas, desde el
+                            backend hasta la interfaz de usuario. Disfruto enfrentando nuevos desafíos y aprendiendo
+                            tecnologías que me permitan mejorar la calidad de mis entregas.
+                        </p>
+                        <p>Aquí hay algunas tecnologías con las que he estado trabajando recientemente:</p>
+                        <ul class="tech-list">
+                            <li>PHP (Laravel)</li>
+                            <li>JavaScript (ES6+)</li>
+                            <li>Angular</li>
+                            <li>MySQL</li>
+                            <li>Linux / Ubuntu</li>
+                            <li>Git</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="text-center mt-4 mt-lg-0">
+                        <img src="https://media.tenor.com/Bpbu2-YNL6cAAAAM/hacker-pupper-dog.gif"
+                            class="img-fluid rounded"
+                            style="max-width: 300px; filter: grayscale(100%); transition: var(--transition);"
+                            onmouseover="this.style.filter='none'" onmouseout="this.style.filter='grayscale(100%)'"
+                            alt="Coding GIF">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title"><span>02.</span> Mis Habilidades</h2>
+            <div class="row g-4">
+
                 <div class="col-md-4">
-                    <div class="skill-box">
-                        <h5 class="text-center">Lenguajes de Programación</h5>
-                        <div class="d-flex flex-wrap justify-content-center">
-                            <div class="skill-item">
-                                <img src="Img/py.png" alt="Python">
-                                <p>Python</p>
-                            </div>
-                            <div class="skill-item">
-                                <img src="Img/php.png" alt="PHP">
-                                <p>PHP</p>
-                            </div>
-                            <div class="skill-item">
-                                <img src="Img/js.png" alt="JavaScript">
-                                <p>JavaScript</p>
-                            </div>
-                            <div class="skill-item">
-                                <img src="Img/c.png" alt="C#">
-                                <p>C#</p>
-                            </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3 class="skill-title">Backend</h3>
+                        <div class="skill-items">
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">Laravel</span>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-4">
-                    <div class="skill-box">
-                        <h5 class="text-center">Bases de Datos</h5>
-                        <div class="d-flex flex-wrap justify-content-center">
-                            <div class="skill-item">
-                                <img src="Img/oracle.png" alt="Oracle DB">
-                                <p>Oracle DB</p>
-                            </div>
-                            <div class="skill-item">
-                                <img src="Img/SQLSERVER.png" alt="Microsoft SQL">
-                                <p>Microsoft SQL</p>
-                            </div>
-                            <div class="skill-item">
-                                <img src="Img/mongodb.png" alt="MongoDB">
-                                <p>MongoDB</p>
-                            </div>
-                            <div class="skill-item">
-                                <img src="Img/MySQL.png" alt="MySQL">
-                                <p>MySQL</p>
-                            </div>
-                            <div class="skill-item">
-                                <img src="Img/postgre.png" alt="PostgreSQL">
-                                <p>PostgreSQL</p>
-                            </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="skill-title">Frontend</h3>
+                        <div class="skill-items">
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">Bootstrap</span>
+                            <span class="skill-tag">Angular</span>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-4">
-                    <div class="skill-box">
-                        <h5 class="text-center">Frameworks y Herramientas</h5>
-                        <div class="d-flex flex-wrap justify-content-center">
-                            <div class="skill-item">
-                                <img src="Img/laravel.png" alt="Laravel">
-                                <p>Laravel</p>
-                            </div>
-                            <div class="skill-item">
-                                <img src="Img/React.png" alt="React">
-                                <p>React</p>
-                            </div>
-                            <div class="skill-item">
-                                <img src="Img/TAIL.png" alt="Tailwind CSS">
-                                <p>Tailwind CSS</p>
-                            </div>
-                            <div class="skill-item">
-                                <img src="Img/VisualCode.png" alt="IDEs">
-                                <p>VS Code</p>
-                            </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3 class="skill-title">Database & Tools</h3>
+                        <div class="skill-items">
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Linux / Ubuntu</span>
                         </div>
                     </div>
                 </div>
@@ -187,27 +171,151 @@
         </div>
     </section>
 
-    <footer id="contacto" style="background-image: url('Img/footer.png'); background-size: cover; background-position: center; padding: 50px 0;">
+
+    <section id="portfolio" class="section">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h4 class="text-center section-title homer-simpson-font"><strong>CONTACTO</strong></h4>
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/randy-molina/" target="_blank"><img src="Img/linkedin_icon-icons.com_65929.png" alt="LinkedIn" class="icon"></a>
-                        <a href="https://drive.google.com/file/d/1kl0ieOFW5i3x2SbBr4y9pfCagFm3i0R_/view?usp=drive_link" target="_blank"><img src="Img/cv.png" alt="CV" class="icon" style="width: 40px; height: 40px;"></a>
-                        <a href="https://github.com/TheAlessxndro" target="_blank"><img src="Img/git.png" alt="Github" class="icon" style="width: 40px; height: 40px;"></a>
+            <h2 class="section-title"><span>03.</span> Cosas que he construido</h2>
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="Img/sistema_inventario.png" alt="Sistema de Inventario" class="project-img">
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Sistema de Inventario</h3>
+                            <div class="project-desc">
+                                <p>Sistema completo que gestiona productos por categorías y ofrece un dashboard contable
+                                    en tiempo real. Conecta un frontend en Angular con un backend en Laravel mediante
+                                    APIs RESTful.</p>
+                            </div>
+                            <div class="project-tech">
+                                <span>Angular</span>
+                                <span>Laravel</span>
+                                <span>MySQL</span>
+                                <span>API REST</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="Img/Sist.png" alt="Tienda Tech" class="project-img">
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Tienda de Tecnología</h3>
+                            <div class="project-desc">
+                                <p>Plataforma de comercio electrónico para artículos tecnológicos. Incluye catálogo
+                                    dinámico y gestión de productos.</p>
+                            </div>
+                            <div class="project-tech">
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                                <span>Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="Img/seguri.png" alt="SeguriKids" class="project-img">
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">SeguriKids</h3>
+                            <div class="project-desc">
+                                <p>Plataforma educativa sobre el bullying escolar. Recursos informativos para la
+                                    comunidad educativa.</p>
+                            </div>
+                            <div class="project-tech">
+                                <span>HTML/CSS</span>
+                                <span>JavaScript</span>
+                                <span>PHP</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="section text-center">
+        <div class="container">
+            <p class="text-accent" style="color: var(--accent-color); font-family: monospace;">04. ¿Qué sigue?</p>
+            <h2 class="mb-4" style="font-size: 3rem;">Ponte en Contacto</h2>
+            <p class="mb-5" style="max-width: 600px; margin: 0 auto; color: var(--text-secondary);">
+                Actualmente estoy buscando nuevas oportunidades y colaboraciones. Si tienes un proyecto en mente o
+                simplemente quieres charlar sobre tecnología, ¡no dudes en escribirme!
+            </p>
+            <a href="mailto:randyjoelmr2003@gmail.com" class="btn btn-custom btn-lg">Saludar</a>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/TheAlessxndro" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/randy-molina/" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>Diseñado & Construido por Randy Molina</p>
         </div>
     </footer>
-    
-    <a href="#" id="scrollToTop" class="scroll-to-top"><img src="Img/coete.png" alt="Cohete"></a>
-    <!-- jQuery y Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+
+
+    <a href="#" class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+
+    <div class="modal fade" id="resumenModal" tabindex="-1" aria-labelledby="resumenModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color: var(--secondary-color); color: var(--text-primary);">
+                <div class="modal-header" style="border-bottom: 1px solid var(--text-secondary);">
+                    <h5 class="modal-title" id="resumenModalLabel" style="color: var(--accent-color);">Perfil
+                        Profesional</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="Img/fot.jpg" alt="Randy Molina" class="rounded-circle mb-3"
+                        style="width: 100px; height: 100px; object-fit: cover; border: 2px solid var(--accent-color);">
+                    <h4 style="color: var(--white);">Randy Molina</h4>
+                    <p class="text-accent mb-3" style="color: var(--accent-color);">Full Stack Developer (PHP/Laravel)
+                    </p>
+                    <p style="font-size: 0.9rem;">
+                        Desarrollador de software apasionado por crear soluciones web a medida. Especializado en backend
+                        con PHP/Laravel y frontend moderno. Experiencia construyendo sistemas de inventario, e-commerce
+                        y plataformas educativas.
+                    </p>
+                    <div class="d-flex justify-content-center flex-wrap gap-2 mb-4">
+                        <span class="badge bg-dark text-light border border-secondary">PHP</span>
+                        <span class="badge bg-dark text-light border border-secondary">Laravel</span>
+                        <span class="badge bg-dark text-light border border-secondary">Angular</span>
+                        <span class="badge bg-dark text-light border border-secondary">MySQL</span>
+                        <span class="badge bg-dark text-light border border-secondary">Linux</span>
+                    </div>
+
+                    <a href="https://drive.google.com/file/d/1zla0dnlfQxbJXSCpklzMtlpVwKoi-kJk/view?usp=sharing"
+                        target="_blank" class="btn btn-custom btn-sm">
+                        <i class="fas fa-download me-2"></i>Descargar CV Completo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="main.js"></script>
 </body>
 
 </html>
