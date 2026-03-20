@@ -25,7 +25,6 @@ import { ProfileFacade } from '../../../application/profile/profile.facade';
           Diseñado & Construido por {{ name() }}
         </p>
         <p class="tech">
-          Hecho con Angular + DDD
         </p>
       </div>
     </footer>
