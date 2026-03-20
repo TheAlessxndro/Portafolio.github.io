@@ -77,7 +77,7 @@
                 }
               ],
               "outputHashing": "all",
-              "baseHref": "/"
+              "baseHref": "/Portafolio.github.io/"
             }
           },
           "defaultConfiguration": "production"
